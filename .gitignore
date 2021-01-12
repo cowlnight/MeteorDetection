@@ -1,11 +1,16 @@
 # Prerequisites
 *.d
+*.json
 
 # Compiled Object files
 *.slo
 *.lo
 *.o
 *.obj
+*.ilk
+*.pdb
+*.ipdb
+*.iobj
 
 # Precompiled Headers
 *.gch
@@ -14,7 +19,7 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
+
 
 # Fortran module files
 *.mod
@@ -24,7 +29,12 @@
 *.lai
 *.la
 *.a
-*.lib
+
+
+# Image files
+*.png
+*.jpg
+*.tif
 
 # Executables
 *.exe
