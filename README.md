@@ -16,7 +16,7 @@
 | processing  |  result |
 |---|---|
 | (0) Raw iamge|![](https://i.imgur.com/8Yb2kSU.png)|
-| (1) Loading image  |  ![](https://i.imgur.com/KtbXhrD.png) |
+| (1) Grayscale |  ![](https://i.imgur.com/KtbXhrD.png) |
 | (2) Edge detection : Canny | ![](https://i.imgur.com/pobFtF1.png)  |
 | (3) Apply the mask to the result of edge detection  | ![](https://i.imgur.com/TD1lgmI.png)![](https://i.imgur.com/w7zdha8.png)  |
 |(4) Line dilatation|![](https://i.imgur.com/EDxZmaH.png)|
