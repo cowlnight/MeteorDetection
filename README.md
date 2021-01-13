@@ -5,7 +5,7 @@
     python find_meteor.py [input_path] [output_path]  
     example: python find_meteor.py ./2020-11-11 ./2020-11-11-find  
 
-方法流程：
+## 方法流程：  
 1.讀取灰階圖  
 2.canny邊緣偵測  
 3.將手動繪製的mask,罩到（2）的canny結果上  
