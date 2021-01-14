@@ -6,6 +6,7 @@ Meteor Detection
 ![chat](https://img.shields.io/discord/:serverId.svg)
 
 
+
 This is a basic approach for meteor detection. There are 2 versions (Cpp version and Python version) for this task.
 
 
@@ -90,4 +91,4 @@ Precompiled header file: `pch.h`
 ## Limitation
 1. This project can not identify the difference between airplane and meteor. 
 2. The light spot may create noise and get the wrong output.
-3. The project just solve the specific source image(because we create the mask for this type image). If you want to use images from other camera or device, you need to rewrite the mask code.
+3. The project just solve the specific source image(because we create the mask and time filter for this type of image). If you want to use images from other camera or device, you need to rewrite the mask or time filter(just read images from 6pm to 6am) code.

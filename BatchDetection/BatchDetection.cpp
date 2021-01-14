@@ -142,12 +142,15 @@ int main(int argc, const char** argv)
 			if (files_type == ".jpg" || files_type == ".tif") {  //  load image file
 
 				string imageName;
-
 				imageName = dataDir + dataFolders[i] + "/" + files[j];
+
+				string hours_str = files[j].substr(files[j].find("__")+2);
+				hours_str = hours_str.substr(0, hours_str.find("_"));
+				int hours = atoi(hours_str.c_str());
+				if (hours >= 6 && hours < 18) continue;
 
 				string cmd = programName + " -IMAGE_PATH " + imageName;
 				cout << "Detecting " << imageName << endl;
-
 
 
 				resultFile << files[j].substr(0, files[j].size() - 4) << ",";
