@@ -74,6 +74,7 @@ Precompiled header file: `pch.h`
 2. Put images to `data` folder, keep the path as:
     * `data/FOLDER/IMAGE.jpg`
 3. Run `BatchDetection.exe` for excution.
+4. Output can be found in `dump` folder and `result` folder.
 
 ## How to Build the Code
 1. Unzip `Assets` and `Include` folders.
