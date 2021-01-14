@@ -11,13 +11,13 @@ This is a basic approach for meteor detection. There are 2 versions (Cpp version
 
 
 ## Environment 
-OS: Windows 10 (Visual Studio 2017)
+OS: Windows 10 (Visual Studio 2017)<br>
 OpenCV
 
 ## Setup （Windows 10）
-Working Directory: `$(ProjectDir)..\Assets`
-Include Directories: `..\include;$(IncludePath)`
-Library Directories: `..\lib;$(LibraryPath)`
+Working Directory: `$(ProjectDir)..\Assets` <br>
+Include Directories: `..\include;$(IncludePath)` <br>
+Library Directories: `..\lib;$(LibraryPath)` <br>
 
 Library for Debug mode:
 ```
