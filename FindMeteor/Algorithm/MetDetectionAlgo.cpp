@@ -96,13 +96,13 @@ bool CMetDetection::Execute(CMeteorData& _data)
 	///*=== Combine 2 conditions: check legal line features and contour features ===*///
 	CheckContourandHough(contours_rect,lines);
 	
-	for (size_t i = 0; i < lines.size(); i++)
+	/*for (size_t i = 0; i < lines.size(); i++)
 	{
 		Vec4i l = lines[i];
 
 		line(dstImg, Point(l[0], l[1]), Point(l[2], l[3]), Scalar(255, 0, 0), 1, LINE_AA); 
 
-	}
+	}*/
 	drawContours(dstImg, contours_rect, -1, Scalar(0, 0, 255), 2);
 
 	///*== create output path &&  save output result ==*///
@@ -561,7 +561,6 @@ void FindMeteor::CMetDetection::CheckContourandHough(vector<vector<Point>>& cont
 	for (int i = 0; i < contour.size(); i++) {
 		bool isInContour = false;
 		for (int j = 0; j < lines.size(); j++) {
-			cout << fabs(pointPolygonTest(contour[i], midPoint[j], 1)) << endl;
 			if (fabs(pointPolygonTest(contour[i], midPoint[j], 1)) < 1.5) {
 				isInContour = true;
 				break;

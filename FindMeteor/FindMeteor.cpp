@@ -11,7 +11,7 @@
 using namespace FindMeteor;
 
 const char* CmdKey =
-"{@IMAGE_PATH  |data/20201128/2020_08_14__01_07_37.jpg|input image path}"//data/20201128/2020_08_14__01_07_37.jpg
+"{@IMAGE_PATH  ||input image path}"//data/20201128/2020_08_14__01_07_37.jpg
 "{h help       ||show the help message}"
 "{o out        |o|output images of every stage}"
 "{e error      ||show error message}"
