@@ -109,18 +109,9 @@ bool CMetDetection::Execute(CMeteorData& _data)
 
 	if (contours_rect.size() > 0) {
 
-		time_t nowTime;
-		tm gmt;
-		char timeStr[80];
 
-		time(&nowTime);
-		localtime_s(&gmt, &nowTime);
-		mktime(&gmt);
-
-		strftime(timeStr, sizeof(timeStr), "%m%d%H%M", &gmt);
-
-		CreateFolder("dump/" + _data.dataSubPath + "/" + timeStr);
-		_data.outputFolderPath = "dump/" + _data.dataSubPath + "/" + timeStr + "/";
+		CreateFolder("dump/" + _data.dataSubPath);
+		_data.outputFolderPath = "dump/" + _data.dataSubPath + "/" ;
 
 		imwrite(_data.outputFolderPath + _data.srcFileNameT, srcImg);
 		imwrite(_data.outputFolderPath + _data.srcFileName+"_detected.jpg" , dstImg);
