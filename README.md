@@ -1,7 +1,3 @@
----
-title: 'MeteorDetection'
-disqus: hackmd
----
 
 Meteor Detection 
 ===
