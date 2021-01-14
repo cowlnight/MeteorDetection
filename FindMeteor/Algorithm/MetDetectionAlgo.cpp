@@ -85,7 +85,7 @@ bool CMetDetection::Execute(CMeteorData& _data)
 		return false;
 	
 	/// 2. remove NOT rectangle shape from contours ===//
-	CheckRectContour(contours_rect);
+	CheckRectContour(contours_rect, dilateImg);
 
 	if (contours_rect.size() < 0)
 		return false;
